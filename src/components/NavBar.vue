@@ -12,7 +12,7 @@
       <div class="menu">
         <a href="#" class="menu-item">Departments</a>
         <a href="#" class="menu-item">Settings</a>
-        <a href="#" class="menu-item">Logout</a>
+        <a href="#" class="menu-login">Logout</a>
       </div>
     </div>
   </nav>
@@ -30,9 +30,12 @@
         }
       }
       .menu {
-        @apply flex gap-5;
+        @apply flex gap-3;
         &-item {
           @apply rounded-md px-4 py-2 hover:bg-blue-300 hover:text-slate-900;
+        }
+        &-login {
+          @apply rounded-md bg-blue-200 px-4 py-2 text-blue-700 hover:bg-blue-700 hover:text-blue-100;
         }
       }
     }
