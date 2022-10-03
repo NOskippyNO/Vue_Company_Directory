@@ -1,6 +1,6 @@
 <script setup>
   import { ref } from 'vue'
-  import { useAuth } from '@/Composables/useAuth'
+  import { useAuth } from '@/composables/useAuth'
 
   const { isAuthenticated, logout, user } = useAuth()
 
@@ -21,12 +21,12 @@
           >
         </p>
         <div v-if="isAuthenticated">
-          <RouterLink :to="{ name: 'Settings' }" class="menu-item">Settings</RouterLink>
-          <button :to="{ name: 'Home' }" class="menu-logout" @click="logout">Logout</button>
+          <RouterLink :to="{ name: 'Settings' }" href="#" class="menu-item">Settings</RouterLink>
+          <button href="#" class="menu-logout" @click="logout">Logout</button>
         </div>
 
         <div v-else>
-          <RouterLink :to="{ name: 'Login' }" class="menu-login">Login</RouterLink>
+          <RouterLink :to="{ name: 'Login' }" href="#" class="menu-login">Login</RouterLink>
         </div>
       </div>
     </div>
