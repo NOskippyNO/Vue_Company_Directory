@@ -40,3 +40,5 @@ export const useAuth = () => {
   }
   return { isAuthenticated, user, login, logout }
 }
+
+//This is a test//
