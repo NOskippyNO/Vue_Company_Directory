@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import router from '@/router'
 
 const dbUsers = [
   {
@@ -20,7 +20,6 @@ const dbUsers = [
 
 const isAuthenticated = ref(false)
 const user = ref({})
-const router = useRouter()
 
 export const useAuth = () => {
   const login = (username, password) => {
