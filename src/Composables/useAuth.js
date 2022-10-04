@@ -4,7 +4,7 @@ import { firebaseApp } from '@/Composables/useFirebase'
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import { useAuth as firebaseAuth } from '@vueuse/firebase/useAuth'
 
-const auth = getAuth(firebaseAuth)
+const auth = getAuth(firebaseApp)
 
 const { isAuthenticated, user } = firebaseAuth(auth)
 
